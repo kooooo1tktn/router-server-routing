@@ -1,0 +1,18 @@
+{
+  "name": "router-server-side-routing-ja-v1.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "react-server",
+    "build": "react-server build",
+    "start": "react-server start"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@lazarv/react-server": "^0.0.0-experimental-44033c0-20250123-2c156f57"
+  }
+}
