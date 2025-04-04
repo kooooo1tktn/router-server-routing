@@ -1,7 +1,15 @@
 export default {
-  root: "src/app", // エントリポイントを明示
+  root: "src/app",
   server: {
     port: 3001,
   },
-  matchers: "./src/utils/matchers",
+  router: {
+    matchers: {
+      number: (value) => {
+        const isNumber = /^\d+$/.test(value);
+        console.log(`Config matcher: Matching ${value} as number: ${isNumber}`);
+        return isNumber;
+      },
+    },
+  },
 };

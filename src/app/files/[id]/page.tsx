@@ -1,16 +1,15 @@
+// src/app/files/[id]/page.tsx
 type FilePageProps = {
-  params: {
-    id: string;
-    parsed?: number; // マッチャーによる型変換結果（任意）
-  };
+  id: string | number; // numberも受け入れるように
 };
 
-export default function FilePage({ params }: FilePageProps) {
+export default function FilePage({ id }: FilePageProps) {
+  console.log("FilePage received id:", id, "type:", typeof id);
+
   return (
     <div>
-      <h1>File Details</h1>
-      <p>ID: {params.id}</p>
-      <p>Parsed ID: {params.parsed}</p>
+      <h1>User ID</h1>
+      <p>ID: {id}</p>
     </div>
   );
 }

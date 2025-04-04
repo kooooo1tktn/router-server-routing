@@ -13,6 +13,6 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "@lazarv/react-server": "^0.0.0-experimental-44033c0-20250123-2c156f57"
+    "@lazarv/react-server": "^0.0.0-experimental-e1baa3f-20250330-021969bf"
   }
 }
